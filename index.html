@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+
+<script>
+    window.onload=function test(){
+        move();}
+    
+    function move (){
+        var ans=document.getElementById("file")
+        var value=1;
+
+        var id=setInterval(frame, 40)
+        function frame(){
+            if (value >=23){
+                clearInterval(id);
+
+            }else{
+                value++;
+                ans.value=value;
+
+            }
+        }
+     }
+     
+</script>
+
+    <body>
+        <header>
+            <h1>多媒體期中個人網頁</h1>
+        </header>
+        <nav>
+            <a href="index.html" colo>首頁</a>
+            <a href="eduhisotry.html">學經歷</a>
+            <a href="hobby.html">興趣</a>
+            <a href="family.html">家庭</a>
+            <a href="personal.html">私人區域</a>
+        </nav>
+        <main>
+            <aside>
+                <img src="images/LINE_ALBUM_230407.jpg" width="400px" height="300px" style="border-radius: 50%;"  >
+                <h3>大名:郭名翔</h3>
+                <h3>系所：資訊管理學系</h3>
+                <h3>特點：樂於助人</h3>
+                <h3>身高：174cm</h3>
+                <h3>生日：2003/03/29</h3>
+                <h3>生命標語：人生本來就很戲劇化！</h3>
+                <div class="array_item">
+                    人生已完成<progress id="file" max="100" value="23">1%</progress>23%
+                </div>  
+            </aside>
+            
+            <article>
+            <section class="card">
+                <h2>專業技能：</h2>
+                <img src="https://picsum.photos/300/200?random=1" style="border-radius: 20px;" />
+                <p>
+                <div class="array_item">
+                    中文會話<progress id="chinese" max="100" value="90">1%</progress>90%
+                </div> 
+                <div class="array_item">
+                    英文翻譯<progress id="english" max="100" value="40">1%</progress>40%
+                </div>
+                <div class="array_item">
+                    175公尺步槍命中率<progress id="shoot" max="100" value="95">1%</progress>95%
+                </div>
+                <div class="array_item">
+                    軍官口令<progress id="command" max="100" value="60">1%</progress>60%
+                </div>
+                </p>
+            </section>
+    
+            <section class="card">
+                <h2>經歷</h2>
+                <img src="images/ROC.jpg" width="400px" height="350px" style="border-radius: 20px;" />
+                111年三軍九校院聯合入伍訓結訓
+                <img src="science/P.1.png" width="400px" height="500px" style="border-radius: 20px;">
+                自然科學與人工智慧漫畫作業高分通過
+                <img src="images/TST.jpg" width="400px" height="300px" style="border-radius: 20px;">    
+                升大學暑假曾到台灣嘉碩當工讀生    
+                
+            </section>
+            </article>
+        </main> 
+        <div class="clear fix">
+
+        </div>   
+        <footer>
+            <h6>此網站僅用於多媒體期中網站製作，無任何商業企圖。(2023)</h6>
+            <a href="mailto:gordonXXXX123@gmail.com?subject=" class="mail">想找我？</a>
+        </footer>
+    </body>
+</html>
